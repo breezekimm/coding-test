@@ -7,9 +7,9 @@ class Solution {
             if ((chars[i] >= 65 && chars[i] <= 90) || (chars[i] >= 97 && chars[i] <= 122)) {
 
                 if ((Character.isUpperCase(chars[i]) && chars[i] + n > 90) || Character.isLowerCase(chars[i]) && chars[i] + n > 122) {
-                    chars[i] = (char)((int)chars[i] + n - 26);
+                    chars[i] = (char)(chars[i] + n - 26);
                 } else {
-                    chars[i] = (char)((int)chars[i] + n);
+                    chars[i] = (char)(chars[i] + n);
                 }
             }
             answer += chars[i];
