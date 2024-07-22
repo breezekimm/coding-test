@@ -46,11 +46,6 @@ class Solution {
             }
         });
 
-        // 정렬된 배열 출력
-        for (int[] row : fiveMinerals) {
-            System.out.println(Arrays.toString(row));
-        }
-
         int j = 0;
         for (int i = 0; i < picks.length && j < fiveMinerals.length; i++) {
             while (picks[i] > 0 && j < fiveMinerals.length) {
